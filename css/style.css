@@ -1,3 +1,14 @@
+/* greeting style */
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #9cd3d3;
+}
+
 .hidden {
   display: none;
 }

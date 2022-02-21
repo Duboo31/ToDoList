@@ -4,34 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/todolist.css">
+  <link rel="stylesheet" href="css/clock.css">
+  <link rel="stylesheet" href="css/weather.css">
   <title>ToDoList</title>
 </head>
 <body>
-  <!-- greetings -->
-  <form id="login-form" class="hidden">
-    <input required maxlength="15" type="text" placeholder="What is your name?" />
-    <input type="submit" value="Log In">
-  </form>
-  <h2 id="clock">00:00:00</h2>
-  <h1 id="greeting" class="hidden"></h1>
-  <form id="todo-form">
-    <input required type="text" placeholder="Write a To Do and Press Enter">
-  </form>
-  <ul id="todo-list"></ul>
-  <div id="quote">
-    <span></span>
-    <span></span>
+  <div class="wrap">
+    <!-- greetings -->
+    <form id="login-form" class="hidden">
+      <input required maxlength="15" type="text" placeholder="What is your name?" />
+      <input type="submit" value="Log In">
+    </form>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id="greeting" class="hidden"></h1>
+
+    <!-- todolist ------------------------------------------------------------->
+    <section class="todolistConatiner">
+      <h1 id="tit">Todo List</h1>
+      <form id="todo-form">
+        <input required type="text" placeholder="할 일을 입력해주세요">
+        <input type="submit" value="추가하기">
+      </form>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
   </div>
-  <div id="weather">
-    <span></span>
-    <span></span>
-  </div>
+
   <!-- js -->
-  <script src="js/greetings.js"></script>
+  <!-- <script src="js/greetings.js"></script> -->
   <script src="js/clock.js"></script>
-  <script src="js/quotes.js"></script>
-  <script src="js/background.js"></script>
+  <!-- <script src="js/quotes.js"></script> -->
+  <!-- <script src="js/background.js"></script> -->
   <script src="js/todo.js"></script>
   <script src="js/weatherKey.js"></script>
   <script src="js/weather.js"></script>
