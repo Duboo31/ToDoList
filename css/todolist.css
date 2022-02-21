@@ -29,6 +29,14 @@
   padding: 0 1em;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  box-sizing: border-box;
+}
+
+#todo-form input:first-child:focus {
+  border-left: 1px solid #5585b5;
+  border-top: 1px solid #5585b5;
+  border-bottom: 1px solid #5585b5;
+  box-sizing: border-box;
 }
 
 #todo-form input:last-child {
@@ -40,6 +48,7 @@
   cursor: pointer;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  box-sizing: border-box;
 }
 
 #todo-list {
@@ -58,6 +67,7 @@
   align-items: center;
   box-sizing: border-box;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #todo-list li span {

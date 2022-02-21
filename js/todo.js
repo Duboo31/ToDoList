@@ -30,6 +30,11 @@ const paintToDo = (newTodo) => {
   toDoList.appendChild(li);  
 }
 
+const test = (event) => {
+  console.log(event.target)
+}
+
+
 const handleTodoSubmit = (event) => {
   event.preventDefault();
   const newTodo = toDoInput.value;
