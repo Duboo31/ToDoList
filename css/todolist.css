@@ -1,0 +1,78 @@
+/* todolist */
+.todolistConatiner {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#tit {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 0.5em;
+}
+
+#todo-form {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 1em;
+}
+
+#todo-form input:first-child {
+  width: 75%;
+  height: 100%;
+  font-weight: bold;
+  outline: none;
+  padding: 0 1em;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#todo-form input:last-child {
+  width: 25%;
+  height: 100%;
+  background: #5585b5;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#todo-list {
+  width: 100%;
+}
+
+#todo-list li {
+  margin-bottom: 0.5em;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  padding: 0 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#todo-list li span {
+  font-weight: bold;
+}
+
+#todo-list li button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#todo-list li button::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f1f8";
+  color: rgb(124, 124, 124);
+}
