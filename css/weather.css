@@ -1,0 +1,8 @@
+#weather {
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
